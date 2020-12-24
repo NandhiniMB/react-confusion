@@ -50,13 +50,13 @@ function Home(props)
          <img width="100%" src="assets/images/cover.jpg" alt="Cover.jpg" />
          <div className="row align-items-start">
                 <div className="col-12 col-md m-1">
-                    <RenderCard item={props.dish} isLoading={props.dishesLoading} errMsg={props.errMsg} />
+                    <RenderCard item={props.dish} isLoading={props.dishesLoading} errMsg={props.dishesErrMsg} />
                 </div>
                 <div className="col-12 col-md m-1">
                     <RenderCard item={props.promotion} />
                 </div>
                 <div className="col-12 col-md m-1">
-                    <RenderCard item={props.leader} />
+                    <RenderCard item={props.leader} isLoading ={props.leadersLoading} errMsg={props.leadersErrMsg}/>
                 </div>
             </div>
          
